@@ -18,7 +18,8 @@ import { notify } from "../utils/notifications";
 const WalletContextProvider: FC<{ children: ReactNode }> = ({ children }) => {
     const { autoConnect } = useAutoConnect();
     const network = WalletAdapterNetwork.Devnet;
-    const endpoint = useMemo(() => clusterApiUrl(network), [network]);
+    
+    const endpoint = "https://rpc.shyft.to?api_key=XG8S43NFKUPiIXHQ";
 
     const wallets = useMemo(
         () => [
